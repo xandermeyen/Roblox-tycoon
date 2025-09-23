@@ -1,0 +1,14 @@
+[package]
+name = "xande/tycoon"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Cmdr = "evaera/cmdr@1.12.0"
+Promise = "evaera/promise@4.0.0"
+Janitor = "howmanysmall/janitor@1.18.3"
+Knit = "sleitnick/knit@1.7.0"
+Roact = "roblox/roact@1.4.4"z`
+
+[server-dependencies]
