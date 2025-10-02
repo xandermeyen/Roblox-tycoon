@@ -1,25 +1,41 @@
 {
-  "name": "Tycoon",
+  "name": "HauntedTycoon",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
-      "Shared": {
+      "$className": "ReplicatedStorage",
+      "Modules": {
         "$path": "src/shared"
       },
-      "Packages": {
-        "$path": "Packages"
+      "RemoteEvents": {
+        "$className": "Folder",
+        "PurchaseBuilding": {
+          "$className": "RemoteEvent"
+        },
+        "ClaimTycoon": {
+          "$className": "RemoteEvent"
+        }
+      },
+      "RemoteFunctions": {
+        "$className": "Folder",
+        "GetPlayerData": {
+          "$className": "RemoteFunction"
+        }
       }
     },
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
+      "$path": "src/server"
+    },
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "TycoonTemplate": {
+        "$className": "Folder"
       }
     },
     "StarterPlayer": {
+      "$className": "StarterPlayer",
       "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
+        "$path": "src/client"
       }
     }
   }
